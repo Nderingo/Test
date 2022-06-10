@@ -98,10 +98,27 @@ let likes = 10;
  const comments = 30;
 
 //  concatenation way
-const results = 'The blog called the ' + title + ' written by ' + author + ' has ' + comments + ' comments'
-console.log(results);
+// const results = 'The blog called the ' + title + ' written by ' + author + ' has ' + comments + ' comments'
 
 // template string way/ template literals
+const results = `The blog called the ${title} written by ${author} has ${comments} comments`
+console.log(results);
 
 
+let cars = ['toyota','tesla','VW']
+
+// let carsResult = cars.join('-');
+let carsResult = cars.length
+console.log(carsResult);
 // creatign html template
+
+
+// if statement 
+
+let password = "Kilimanjaro12";
+
+if(password.length<=10) {
+  console.log("The passoword is not long enough")
+}else if(password.length>=10) {
+  console.log("The passoword is long enough")
+}
