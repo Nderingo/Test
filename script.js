@@ -122,3 +122,39 @@ if(password.length<=10) {
 }else if(password.length>=10) {
   console.log("The passoword is long enough")
 }
+
+
+// BREAK & CONTINUE
+let scores = [20,50,0,10,0,0,90,100,29,49];
+for (let i=0; i<scores.length; i++) {
+  if(scores[i] === 0){
+    continue;
+  }
+  console.log("gameScore",scores[i]);
+
+  if(scores[i] === 100){
+    console.log("congrats you gat the top game score");
+    break;
+  }
+}
+
+
+// SWITCH STATEMENT
+let grade = "D"
+
+switch(grade){
+  case "A":
+  console.log("you got an awesome grade A");
+  break;
+  case "B":
+  console.log("you got an awesome grade B");
+  break;
+  case "C":
+  console.log("you got an awesome grade C");
+  break;
+  case "D":
+  console.log("you got an awesome grade D");
+  break;
+  default:
+  console.log("you got an bad grade");
+}
