@@ -158,3 +158,10 @@ switch(grade){
   default:
   console.log("you got an bad grade");
 }
+
+
+const speak = function(subject,A){
+  console.log(`grade ${A},${subject}`);
+}
+
+speak('A','Physics');
