@@ -159,9 +159,36 @@ switch(grade){
   console.log("you got an bad grade");
 }
 
-
+// Argument parameters
 const speak = function(subject,A){
   console.log(`grade ${A},${subject}`);
 }
 
 speak('A','Physics');
+
+// Returning values
+const calArea = function(radius){
+  return 3.14 * radius**4;
+}
+
+const area = calArea(3);
+
+console.log(area);
+
+// Arrow functionS
+
+const callArea = radius =>3.14 * radius**4;
+
+
+const perimeter = callArea(3);
+
+console.log(perimeter);
+
+
+// Foreach method and callBack method
+
+const people = ['lyimo','grace','alpha','amon','shirley'];
+
+people.forEach(function(person,index){
+  console.log(index,person);
+})
