@@ -189,6 +189,7 @@ console.log(perimeter);
 
 const people = ['lyimo','grace','alpha','amon','shirley'];
 
-people.forEach(function(person,index){
-  console.log(index,person);
-})
+const logPerson = (person,index) => {
+  console.log(`${index} - Jambo ${person}`);
+}
+people.forEach(logPerson);
