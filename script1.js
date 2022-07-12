@@ -2,6 +2,7 @@
 
 let user = {
     name: 'John',
+    lastName: 'John',
     age: 36,
     email: 'john@example.com',
     location:'renton',
