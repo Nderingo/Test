@@ -66,6 +66,7 @@
 
 // guessSubmit.addEventListener("click", checkGuess);
 
+// Concatination
 let firstName = 'Emmanuel';
 let lastName ='Lyimo';
 
