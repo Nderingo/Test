@@ -67,10 +67,10 @@
 // guessSubmit.addEventListener("click", checkGuess);
 
 // Concatination
-let firstName = 'Emmanuel';
-let lastName ='Lyimo';
+let firstName = "Emmanuel";
+let lastName = "Lyimo";
 
-let fullName = firstName + ' ' + lastName;
+let fullName = firstName + " " + lastName;
 console.log(fullName);
 
 console.log(fullName.toUpperCase());
@@ -78,99 +78,92 @@ console.log(fullName.toLowerCase());
 
 console.log(fullName[3]);
 
-
 let email = "ally@gmail.com";
 // let result = email.indexOf('@');
 // let result = email.slice(0,3);
 // let result = email.substr(0,3);
-let result = email.replace('a' ,'k');
+let result = email.replace("a", "k");
 // let result = email.indexOf('@');
 console.log(result);
-  
 
 let likes = 10;
- likes+=100;
- likes++
- console.log(likes);
+likes += 100;
+likes++;
+console.log(likes);
 
-
- const title = 'Best Novels for 2017';
- const author = 'Emmanuel';
- const comments = 30;
+const title = "Best Novels for 2017";
+const author = "Emmanuel";
+const comments = 30;
 
 //  concatenation way
 // const results = 'The blog called the ' + title + ' written by ' + author + ' has ' + comments + ' comments'
 
 // template string way/ template literals
-const results = `The blog called the ${title} written by ${author} has ${comments} comments`
+const results = `The blog called the ${title} written by ${author} has ${comments} comments`;
 console.log(results);
 
-
-let cars = ['toyota','tesla','VW']
+let cars = ["toyota", "tesla", "VW"];
 
 // let carsResult = cars.join('-');
-let carsResult = cars.length
+let carsResult = cars.length;
 console.log(carsResult);
 // creatign html template
 
-
-// if statement 
+// if statement
 
 let password = "Kilimanjaro12";
 
-if(password.length<=10) {
-  console.log("The passoword is not long enough")
-}else if(password.length>=10) {
-  console.log("The passoword is long enough")
+if (password.length <= 10) {
+  console.log("The passoword is not long enough");
+} else if (password.length >= 10) {
+  console.log("The passoword is long enough");
 }
 
-
 // BREAK & CONTINUE
-let scores = [20,50,0,10,0,0,90,100,29,49];
-for (let i=0; i<scores.length; i++) {
-  if(scores[i] === 0){
+let scores = [20, 50, 0, 10, 0, 0, 90, 100, 29, 49];
+for (let i = 0; i < scores.length; i++) {
+  if (scores[i] === 0) {
     continue;
   }
-  console.log("gameScore",scores[i]);
+  console.log("gameScore", scores[i]);
 
-  if(scores[i] === 100){
+  if (scores[i] === 100) {
     console.log("congrats you gat the top game score");
     break;
   }
 }
 
-
 // SWITCH STATEMENT
-let grade = "D"
+let grade = "D";
 
-switch(grade){
+switch (grade) {
   case "A":
-  console.log("you got an awesome grade A");
-  break;
+    console.log("you got an awesome grade A");
+    break;
   case "B":
-  console.log("you got an awesome grade B");
-  break;
+    console.log("you got an awesome grade B");
+    break;
   case "C":
-  console.log("you got an awesome grade C");
-  break;
+    console.log("you got an awesome grade C");
+    break;
   case "D":
-  console.log("you got an awesome grade D");
-  break;
+    console.log("you got an awesome grade D");
+    break;
   default:
-  console.log("you got an bad grade");
+    console.log("you got an bad grade");
 }
 
 // Argument parameters
-const speak = function(subject,A){
+const speak = function (subject, A) {
   console.log(`grade ${A},${subject}`);
-}
+};
 
-speak('A','Physics');
+speak("A", "Physics");
 
 // Returning values
-const calArea = function(radius){
-  return 3.14 * radius**4;
-}
+const calArea = function (radius) {
+  return 3.14 * radius ** 4;
+};
 
 const area = calArea(3);
 
@@ -178,34 +171,31 @@ console.log(area);
 
 // Arrow functionS
 
-const callArea = radius =>3.14 * radius**4;
-
+const callArea = (radius) => 3.14 * radius ** 4;
 
 const perimeter = callArea(3);
 
 console.log(perimeter);
 
-
 // Foreach method and callBack method
 
-const people = ['lyimo','grace','alpha','amon','shirley'];
+const people = ["lyimo", "grace", "alpha", "amon", "shirley"];
 
-const logPerson = (person,index) => {
+const logPerson = (person, index) => {
   console.log(`${index} - Jambo ${person}`);
-}
+};
 people.forEach(logPerson);
 
-
 // callBack function in action
-const ul = document.querySelector('.watu');
+// const ul = document.querySelector(".watu");
 
-const watu = ['lyimo','grace','alpha','amon','shirley'];
+// const watu = ["lyimo", "grace", "alpha", "amon", "shirley"];
 
-let html = ``;
-watu.forEach(function(mtu){
-// /create a HTML template
- html += `<li style="class: purple"${mtu}</li>`; 
-});
+// let html = ``;
+// watu.forEach(function (mtu) {
+//   // /create a HTML template
+//   html += `<li style="class: purple"${mtu}</li>`;
+// });
 
-console.log(html);
-ul.innerHTML = html;
+// console.log(html);
+// ul.innerHTML = html;
