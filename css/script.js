@@ -187,15 +187,15 @@ const logPerson = (person, index) => {
 people.forEach(logPerson);
 
 // callBack function in action
-// const ul = document.querySelector(".watu");
+const ul = document.querySelector(".watu");
 
-// const watu = ["lyimo", "grace", "alpha", "amon", "shirley"];
+const watu = ["lyimo", "grace", "alpha", "amon", "shirley"];
 
-// let html = ``;
-// watu.forEach(function (mtu) {
-//   // /create a HTML template
-//   html += `<li style="class: purple"${mtu}</li>`;
-// });
+let html = ``;
+watu.forEach(function (mtu) {
+  // /create a HTML template
+  html += `<li style="class: purple"${mtu}</li>`;
+});
 
-// console.log(html);
-// ul.innerHTML = html;
+console.log(html);
+ul.innerHTML = html;
