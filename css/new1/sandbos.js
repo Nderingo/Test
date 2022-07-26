@@ -14,3 +14,7 @@ console.log(tags[1]);
 // const error = document.querySelectorAll('.error');
 
 // console.log(error)
+
+const errors = document.getElementsByClassName('error');
+
+console.log(errors)
