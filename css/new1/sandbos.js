@@ -18,7 +18,7 @@ para.forEach(para=>{
 const hereby = document.querySelectorAll('div');
 hereby.forEach(hereby=>{
     console.log(hereby.innerText);
-    hereby.innerText += 'Hello'
+    hereby.innerText += ' Hello'
 });
 
 // console.log(hereby.innerText);
@@ -27,4 +27,4 @@ hereby.forEach(hereby=>{
 
 const content = document.querySelector('.errors');
 
-content.innerHTML = '<h2>THIS IS A NEW HTML</h2>'
+content.innerHTML += '<h2>THIS IS A NEW HTML</h2>'
